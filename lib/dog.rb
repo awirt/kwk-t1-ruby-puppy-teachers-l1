@@ -1,5 +1,7 @@
 class Dog
   
+  attr_accessor :name
+  
   @@all = [] #defines a class variable to keep track of all instances of class, all dogs
   
   def initialize(name)
