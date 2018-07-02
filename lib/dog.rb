@@ -4,7 +4,7 @@ class Dog
   
   def initialize(name)
     @name = name #sets input name to instance variable @name
-    @@all << self
+    @@all << self #this creates an array of all the Dog IDs and attributes
   end
   
   def self.clear_all
@@ -13,7 +13,7 @@ class Dog
   
   def self.all
     @@all.each do |dog_instance|
-      puts dog_instance #puts each dog in the class
+      puts dog_instance.name #must call the name method because the dog_instance is an Object ID
     end
   end
   
